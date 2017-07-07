@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>RDS/Last quiz</title>
+</head>
+<body>
+<p>Name: Hasitha Nekkalapu </p><p>ID: 1001511218</p>
+  <table border="2px">
+    <tr><td>NAME</td>
+      <td>CITY</td>
+      <td>STATE</td>
+    </tr>
+    {% for obj in tableData %}
+    <tr>  
+    <td>{{obj.filename}}</td>
+    <td>{{obj.cusine}}</td>
+    <td>{{obj.ingredients}}</td></tr>
+<img src = "https://abc.blob.core.windows.net//{{obj.filename}}.jpg" style="width:30px;height:30px;"> 
+  
+ {% endfor %}
+</table>
+
+
+</body>
+</html>
